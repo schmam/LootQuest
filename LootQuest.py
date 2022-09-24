@@ -8,14 +8,14 @@ class Monster:
 
     @classmethod    
     def generate_monster(cls):
-        monster = Monster()
-        monster.type = random.choice(Monster.monster_types)
-        if monster.type == "rat":
-            monster.health = random.randint(50, 100)
-        elif monster.type == "goblin":
-            monster.health = random.randint(100, 200)
-        elif monster.type == "orc":
-            monster.health = random.randint(200, 400)    
+        type = random.choice(monster_types)
+        if type == "rat":
+            health = random.randint(50, 100)
+        elif type == "goblin":
+            health = random.randint(100, 200)
+        elif type == "orc":
+            health = random.randint(200, 400)
+        return cls(type, health) 
 
 
 
