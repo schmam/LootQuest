@@ -1,7 +1,7 @@
 import random           # for all things RNG
 
-Class Monster:
-    def __init__(self, type, health)
+class Monster:
+    def __init__(self, type, health):
         self.type = type
         self.health = health
         self.monster_types = [rat, goblin, orc]
