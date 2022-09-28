@@ -20,9 +20,14 @@ class Monster:
 
 
 def main():
-    first_monster = Monster.generate_monster()
+    first_monster = Monster("ghoul", 100)
     print(first_monster.monster_type)
     print(first_monster.monster_health)
+
+
+    second_monster = Monster.generate_monster()
+    print(second_monster.monster_type)
+    print(second_monster.monster_health)
 
    
 
